@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Tree Visualization</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f0f4f8;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 20px;
+            color: #333;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .node circle {
+            fill: url(#nodeGradient);
+            stroke: #6b8e23;
+            stroke-width: 2px;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+            text-anchor: middle;
+            fill: black;
+        }
+
+        .link {
+            fill: none;
+            stroke: #aaa;
+            stroke-width: 2px;
+        }
+
+        svg {
+            margin-top: 20px;
+            overflow: visible;
+        }
+
+        #header-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #header-container p {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        #header-container button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            color: white;
+        }
+
+        #header-container button:hover {
+            transform: scale(1.05);
+        }
+
+        #header-container button:first-child {
+            background-color: #4CAF50;
+        }
+
+        #header-container button:nth-child(2) {
+            background-color: #2196F3;
+        }
+
+        #header-container button:nth-child(3) {
+            background-color: #FF9800;
+        }
+
+        #traversal-popup {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            max-height: 80%;
+            overflow-y: auto;
+            font-family: Arial, sans-serif;
+        }
+
+        #popup-header {
+            cursor: move;
+            background: linear-gradient(90deg, #4CAF50, #2196F3);
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+
+        #traversal-popup-content {
+            padding: 15px;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        #traversal-popup button {
+            margin: 10px auto;
+            display: block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #F44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #traversal-popup button:hover {
+            background-color: #D32F2F;
+        }
+    </style>
+</head>
+<body>
+    <h1>学生数据二叉排序树</h1>
+    <div id="header-container" style="
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 800px;
+        background: linear-gradient(180deg, #ffffff, #f0f8ff);
+        border-radius: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;">
+        <p style="font-size: 18px; font-weight: bold; margin-bottom: 20px; color: #333;">提示：按住鼠标左键拖动视图，可放大缩小视图</p>
+        <div style="display: flex; justify-content: center; gap: 15px;">
+            <button onclick="performTraversal('preorder')" style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer;">前序遍历</button>
+            <button onclick="performTraversal('inorder')" style="padding: 10px 20px; font-size: 16px; background-color: #2196F3; color: white; border: none; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer;">中序遍历</button>
+            <button onclick="performTraversal('postorder')" style="padding: 10px 20px; font-size: 16px; background-color: #FF9800; color: white; border: none; border-radius: 10px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); cursor: pointer;">后序遍历</button>
+        </div>
+    </div>
+    <svg width="1200" height="800"></svg>
+
+    <div id="traversal-popup">
+        <div id="popup-header">按住此处可拖动窗口</div>
+        <div id="traversal-popup-content"></div>    
+        <button onclick="closePopup()">关闭</button>
+    </div>
+
+    <script>
+        function convertToHierarchyFormat(node) {
+            if (!node) return null;
+            const children = [];
+            if (node.left) children.push(convertToHierarchyFormat(node.left));
+            if (node.right) children.push(convertToHierarchyFormat(node.right));
+            return {
+                id: node.id,
+                children: children.length > 0 ? children : null,
+            };
+        }
+
+        function performTraversal(type) {
+            fetch(`/traverse/${type}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert(`Error: ${data.error}`);
+                    } else {
+                        const groupSize = 10;
+                        const formattedResult = data.result.reduce((acc, value, index) => {
+                            if (index % groupSize === 0 && index !== 0) {
+                                acc += '\n';
+                            }
+                            acc += value + ' -> ';
+                            return acc;
+                        }, '');
+
+                        document.getElementById("traversal-popup-content").innerText =
+                            `${data.traversal_type} 遍历结果:\n${formattedResult.slice(0, -4)}`;
+                        document.getElementById("traversal-popup").style.display = "block";
+                    }
+                })
+                .catch(error => {
+                    console.error('Error performing traversal:', error);
+                    alert("请求失败，请检查网络连接");
+                });
+        }
+
+        function closePopup() {
+            document.getElementById("traversal-popup").style.display = "none";
+        }
+
+        function makeDraggable(element, handle) {
+            let offsetX = 0;
+            let offsetY = 0;
+            let isDragging = false;
+
+            handle.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                offsetX = e.clientX - element.getBoundingClientRect().left;
+                offsetY = e.clientY - element.getBoundingClientRect().top;
+                document.addEventListener('mousemove', onMouseMove);
+                document.addEventListener('mouseup', onMouseUp);
+            });
+
+            function onMouseMove(e) {
+                if (isDragging) {
+                    element.style.left = `${e.clientX - offsetX}px`;
+                    element.style.top = `${e.clientY - offsetY}px`;
+                    element.style.transform = "none";
+                }
+            }
+
+            function onMouseUp() {
+                isDragging = false;
+                document.removeEventListener('mousemove', onMouseMove);
+                document.removeEventListener('mouseup', onMouseUp);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const popup = document.getElementById('traversal-popup');
+            const header = document.getElementById('popup-header');
+            popup.style.position = 'absolute';
+            makeDraggable(popup, header);
+        });
+
+        const svg = d3.select("svg")
+            .call(d3.zoom().on("zoom", (event) => {
+                g.attr("transform", event.transform);
+            }));
+
+        const defs = svg.append("defs");
+        defs.append("linearGradient")
+            .attr("id", "nodeGradient")
+            .attr("x1", "0%")
+            .attr("y1", "0%")
+            .attr("x2", "100%")
+            .attr("y2", "100%")
+            .selectAll("stop")
+            .data([
+                { offset: "0%", color: "#6b8e23" },
+                { offset: "100%", color: "#a4de02" },
+            ])
+            .enter()
+            .append("stop")
+            .attr("offset", d => d.offset)
+            .attr("stop-color", d => d.color);
+
+        const g = svg.append("g").attr("transform", "translate(600, 50)");
+
+        fetch('/view_tree')
+            .then(response => response.json())
+            .then(treeData => {
+                const convertedData = convertToHierarchyFormat(treeData);
+
+                const tree = d3.tree().nodeSize([80, 200]);
+                const stratify = d3.hierarchy(convertedData);
+                const nodes = tree(stratify).descendants();
+
+                const links = tree(stratify).links();
+
+                g.selectAll(".link")
+                    .data(links)
+                    .enter().append("path")
+                    .attr("class", "link")
+                    .attr("d", d3.linkVertical()
+                        .x(d => d.x)
+                        .y(d => d.y));
+
+                const node = g.selectAll(".node")
+                    .data(nodes)
+                    .enter().append("g")
+                    .attr("class", "node")
+                    .attr("data-id", d => d.data.id)
+                    .attr("transform", d => `translate(${d.x},${d.y})`);
+
+                node.append("circle")
+                    .attr("r", 20)
+                    .style("fill", "url(#nodeGradient)");
+
+                node.append("text")
+                    .attr("dy", -25)
+                    .style("font-size", "12px")
+                    .style("text-anchor", "middle")
+                    .text(d => d.data.id);
+            })
+            .catch(error => console.error('Error fetching tree data:', error));
+    </script>
+</body>
+</html>

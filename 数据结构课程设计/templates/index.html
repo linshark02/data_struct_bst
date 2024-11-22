@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生管理系统</title>
+    <!-- 引入 Bootstrap 和图标库 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('{{ url_for("static", filename="images/background.png") }}');
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* 半透明白色背景 */
+        }
+        .card-header {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .btn {
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .btn:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        nav.navbar {
+            background-color: rgba(0, 105, 217, 0.9); /* 半透明蓝色 */
+        }
+        nav h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .right-column .card {
+            background-color: #f0f8ff;
+            border: 1px solid #007bff;
+        }
+        .right-column .card-header {
+            background-color: #007bff;
+            color: white;
+        }
+        .right-column .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <h1 class="text-center w-100 text-white">
+                <i class="bi bi-person-circle me-2"></i> 学生管理系统
+            </h1>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- 左侧模块 -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header bg-success text-white">
+                        <i class="bi bi-file-earmark-plus me-2"></i> 存储学生数据
+                    </div>
+                    <div class="card-body">
+                        <form id="studentForm" action="/insert" method="post">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" name="id" placeholder="请输入学号" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="name" placeholder="请输入姓名" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" name="age" placeholder="请输入年龄" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select" name="gender" required>
+                                        <option value="" disabled selected hidden>请选择性别</option>
+                                        <option value="女">女</option>
+                                        <option value="男">男</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row g-3 mt-3">
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" name="chinese" placeholder="语文成绩" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" name="math" placeholder="数学成绩" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="number" class="form-control" name="english" placeholder="英语成绩" required>
+                                </div>
+                            </div>
+                            <button type="submit" id="submitInsert" class="btn btn-success mt-4 w-50 mx-auto d-block">
+                                <i class="bi bi-check-circle-fill me-2"></i>存储
+                            </button>
+                        </form>
+                        <!-- 实时预览框 -->
+                        <div class="mt-4">
+                            <h5><i class="bi bi-eye-fill me-2"></i> 实时预览</h5>
+                            <div id="previewBox" class="preview-box">
+                                <p>输入内容将实时显示在这里...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧模块 -->
+            <div class="col-md-6 right-column">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-search me-2"></i> 查询学生数据
+                    </div>
+                    <div class="card-body">
+                        <form action="/search" method="get">
+                            <input type="number" class="form-control mb-3" name="id" placeholder="请输入学号" required>
+                            <button type="submit" class="btn btn-primary w-100">查询</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-trash me-2"></i> 删除学生数据
+                    </div>
+                    <div class="card-body">
+                        <form action="/delete" method="post">
+                            <input type="number" class="form-control mb-3" name="id" placeholder="请输入学号" required>
+                            <button type="submit" class="btn btn-danger w-100">删除</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-table me-2"></i> 查看所有学生数据
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="/view_students_page" class="btn btn-info w-100">查看学生信息</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-diagram-3-fill me-2"></i> 查看树结构
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="/view_tree_page" class="btn btn-secondary w-100">查看树结构</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <i class="bi bi-arrow-repeat me-2"></i> 数据同步更新
+                    </div>
+                    <div class="card-body text-center">
+                        <button id="syncButton" class="btn btn-warning w-100">更新</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 实时预览功能
+        document.getElementById("studentForm").addEventListener("input", function () {
+            const id = document.querySelector("input[name='id']").value || "未输入";
+            const name = document.querySelector("input[name='name']").value || "未输入";
+            const age = document.querySelector("input[name='age']").value || "未输入";
+            const gender = document.querySelector("select[name='gender']").value || "未选择";
+            const chinese = document.querySelector("input[name='chinese']").value || "未输入";
+            const math = document.querySelector("input[name='math']").value || "未输入";
+            const english = document.querySelector("input[name='english']").value || "未输入";
+
+            document.getElementById("previewBox").innerHTML = `
+                <ul>
+                    <li><strong>学号：</strong>${id}</li>
+                    <li><strong>姓名：</strong>${name}</li>
+                    <li><strong>年龄：</strong>${age}</li>
+                    <li><strong>性别：</strong>${gender}</li>
+                    <li><strong>语文：</strong>${chinese}</li>
+                    <li><strong>数学：</strong>${math}</li>
+                    <li><strong>英语：</strong>${english}</li>
+                </ul>
+            `;
+        });
+
+        // 同步数据功能
+        document.getElementById("syncButton").addEventListener("click", function() {
+            fetch('/sync', { 
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' } 
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    alert(data.message); // 显示同步成功消息
+                } else {
+                    alert("数据同步失败！");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("同步时发生错误，请稍后重试！");
+            });
+        });
+    </script>
+</body>
+</html>

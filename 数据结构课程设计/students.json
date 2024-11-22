@@ -1,0 +1,1225 @@
+{
+    "id": 2024500,
+    "name": "\u5c0f\u674e\u5b50",
+    "age": 21,
+    "gender": "\u7537",
+    "grades": {
+        "\u8bed\u6587": 90,
+        "\u6570\u5b66": 85,
+        "\u82f1\u8bed": 88
+    },
+    "left": {
+        "id": 2024351,
+        "name": "\u5c0f\u7f57",
+        "age": 21,
+        "gender": "\u5973",
+        "grades": {
+            "\u8bed\u6587": 77,
+            "\u6570\u5b66": 91,
+            "\u82f1\u8bed": 61
+        },
+        "left": {
+            "id": 2024345,
+            "name": "\u5c0f\u949f",
+            "age": 19,
+            "gender": "\u7537",
+            "grades": {
+                "\u8bed\u6587": 71,
+                "\u6570\u5b66": 80,
+                "\u82f1\u8bed": 93
+            },
+            "left": {
+                "id": 2024100,
+                "name": "\u5c0f\u8bb8",
+                "age": 20,
+                "gender": "\u5973",
+                "grades": {
+                    "\u8bed\u6587": 61,
+                    "\u6570\u5b66": 92,
+                    "\u82f1\u8bed": 83
+                },
+                "left": null,
+                "right": {
+                    "id": 2024131,
+                    "name": "\u5c0f\u97e9",
+                    "age": 20,
+                    "gender": "\u5973",
+                    "grades": {
+                        "\u8bed\u6587": 83,
+                        "\u6570\u5b66": 68,
+                        "\u82f1\u8bed": 88
+                    },
+                    "left": {
+                        "id": 2024119,
+                        "name": "\u5c0f\u97e6",
+                        "age": 21,
+                        "gender": "\u7537",
+                        "grades": {
+                            "\u8bed\u6587": 78,
+                            "\u6570\u5b66": 79,
+                            "\u82f1\u8bed": 68
+                        },
+                        "left": {
+                            "id": 2024114,
+                            "name": "\u5c0f\u4f55",
+                            "age": 22,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 96,
+                                "\u6570\u5b66": 89,
+                                "\u82f1\u8bed": 63
+                            },
+                            "left": null,
+                            "right": null
+                        },
+                        "right": null
+                    },
+                    "right": {
+                        "id": 2024206,
+                        "name": "\u5c0f\u90b5",
+                        "age": 21,
+                        "gender": "\u7537",
+                        "grades": {
+                            "\u8bed\u6587": 88,
+                            "\u6570\u5b66": 66,
+                            "\u82f1\u8bed": 66
+                        },
+                        "left": {
+                            "id": 2024183,
+                            "name": "\u5c0f\u6c64",
+                            "age": 22,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 73,
+                                "\u6570\u5b66": 61,
+                                "\u82f1\u8bed": 67
+                            },
+                            "left": {
+                                "id": 2024148,
+                                "name": "\u5c0f\u660e",
+                                "age": 25,
+                                "gender": "\u5973",
+                                "grades": {
+                                    "\u8bed\u6587": 70,
+                                    "\u6570\u5b66": 70,
+                                    "\u82f1\u8bed": 70
+                                },
+                                "left": null,
+                                "right": {
+                                    "id": 2024156,
+                                    "name": "\u5c0f\u8bb8",
+                                    "age": 20,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 83,
+                                        "\u6570\u5b66": 95,
+                                        "\u82f1\u8bed": 74
+                                    },
+                                    "left": null,
+                                    "right": {
+                                        "id": 2024174,
+                                        "name": "\u5c0f\u7530",
+                                        "age": 20,
+                                        "gender": "\u7537",
+                                        "grades": {
+                                            "\u8bed\u6587": 62,
+                                            "\u6570\u5b66": 95,
+                                            "\u82f1\u8bed": 73
+                                        },
+                                        "left": null,
+                                        "right": null
+                                    }
+                                }
+                            },
+                            "right": null
+                        },
+                        "right": {
+                            "id": 2024241,
+                            "name": "\u5c0f\u53f6",
+                            "age": 19,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 68,
+                                "\u6570\u5b66": 100,
+                                "\u82f1\u8bed": 86
+                            },
+                            "left": {
+                                "id": 2024229,
+                                "name": "\u5c0f\u5ba3",
+                                "age": 18,
+                                "gender": "\u5973",
+                                "grades": {
+                                    "\u8bed\u6587": 80,
+                                    "\u6570\u5b66": 71,
+                                    "\u82f1\u8bed": 84
+                                },
+                                "left": {
+                                    "id": 2024216,
+                                    "name": "\u5c0f\u949f",
+                                    "age": 21,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 83,
+                                        "\u6570\u5b66": 87,
+                                        "\u82f1\u8bed": 82
+                                    },
+                                    "left": null,
+                                    "right": null
+                                },
+                                "right": null
+                            },
+                            "right": {
+                                "id": 2024306,
+                                "name": "\u5c0f\u66fe",
+                                "age": 20,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 69,
+                                    "\u6570\u5b66": 71,
+                                    "\u82f1\u8bed": 71
+                                },
+                                "left": {
+                                    "id": 2024242,
+                                    "name": "\u5c0f\u65bd",
+                                    "age": 22,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 95,
+                                        "\u6570\u5b66": 78,
+                                        "\u82f1\u8bed": 80
+                                    },
+                                    "left": null,
+                                    "right": {
+                                        "id": 2024284,
+                                        "name": "\u5c0f\u5ba3",
+                                        "age": 22,
+                                        "gender": "\u7537",
+                                        "grades": {
+                                            "\u8bed\u6587": 89,
+                                            "\u6570\u5b66": 92,
+                                            "\u82f1\u8bed": 85
+                                        },
+                                        "left": {
+                                            "id": 2024274,
+                                            "name": "\u5c0f\u8584",
+                                            "age": 24,
+                                            "gender": "\u7537",
+                                            "grades": {
+                                                "\u8bed\u6587": 86,
+                                                "\u6570\u5b66": 72,
+                                                "\u82f1\u8bed": 77
+                                            },
+                                            "left": {
+                                                "id": 2024265,
+                                                "name": "\u5c0f\u6bb7",
+                                                "age": 19,
+                                                "gender": "\u5973",
+                                                "grades": {
+                                                    "\u8bed\u6587": 62,
+                                                    "\u6570\u5b66": 90,
+                                                    "\u82f1\u8bed": 77
+                                                },
+                                                "left": null,
+                                                "right": null
+                                            },
+                                            "right": null
+                                        },
+                                        "right": null
+                                    }
+                                },
+                                "right": {
+                                    "id": 2024328,
+                                    "name": "\u5c0f\u5b97",
+                                    "age": 22,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 87,
+                                        "\u6570\u5b66": 92,
+                                        "\u82f1\u8bed": 78
+                                    },
+                                    "left": {
+                                        "id": 2024325,
+                                        "name": "\u5c0f\u5355",
+                                        "age": 18,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 83,
+                                            "\u6570\u5b66": 88,
+                                            "\u82f1\u8bed": 86
+                                        },
+                                        "left": null,
+                                        "right": null
+                                    },
+                                    "right": {
+                                        "id": 2024333,
+                                        "name": "\u5c0f\u5b59",
+                                        "age": 20,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 60,
+                                            "\u6570\u5b66": 93,
+                                            "\u82f1\u8bed": 93
+                                        },
+                                        "left": null,
+                                        "right": null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "right": null
+        },
+        "right": {
+            "id": 2024475,
+            "name": "\u5c0f\u5c60",
+            "age": 23,
+            "gender": "\u5973",
+            "grades": {
+                "\u8bed\u6587": 77,
+                "\u6570\u5b66": 60,
+                "\u82f1\u8bed": 74
+            },
+            "left": {
+                "id": 2024399,
+                "name": "\u5c0f\u5e72",
+                "age": 22,
+                "gender": "\u7537",
+                "grades": {
+                    "\u8bed\u6587": 63,
+                    "\u6570\u5b66": 97,
+                    "\u82f1\u8bed": 99
+                },
+                "left": {
+                    "id": 2024379,
+                    "name": "\u5c0f\u66fe",
+                    "age": 22,
+                    "gender": "\u5973",
+                    "grades": {
+                        "\u8bed\u6587": 82,
+                        "\u6570\u5b66": 62,
+                        "\u82f1\u8bed": 94
+                    },
+                    "left": {
+                        "id": 2024371,
+                        "name": "\u5c0f\u97e6",
+                        "age": 18,
+                        "gender": "\u5973",
+                        "grades": {
+                            "\u8bed\u6587": 79,
+                            "\u6570\u5b66": 85,
+                            "\u82f1\u8bed": 97
+                        },
+                        "left": null,
+                        "right": {
+                            "id": 2024374,
+                            "name": "\u5c0f\u5e94",
+                            "age": 19,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 96,
+                                "\u6570\u5b66": 97,
+                                "\u82f1\u8bed": 67
+                            },
+                            "left": null,
+                            "right": null
+                        }
+                    },
+                    "right": null
+                },
+                "right": {
+                    "id": 2024441,
+                    "name": "\u5c0f\u5e38",
+                    "age": 25,
+                    "gender": "\u7537",
+                    "grades": {
+                        "\u8bed\u6587": 64,
+                        "\u6570\u5b66": 60,
+                        "\u82f1\u8bed": 96
+                    },
+                    "left": {
+                        "id": 2024435,
+                        "name": "\u5c0f\u7fc1",
+                        "age": 20,
+                        "gender": "\u7537",
+                        "grades": {
+                            "\u8bed\u6587": 72,
+                            "\u6570\u5b66": 75,
+                            "\u82f1\u8bed": 66
+                        },
+                        "left": {
+                            "id": 2024415,
+                            "name": "\u5c0f\u53f6",
+                            "age": 25,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 85,
+                                "\u6570\u5b66": 85,
+                                "\u82f1\u8bed": 88
+                            },
+                            "left": {
+                                "id": 2024412,
+                                "name": "\u5c0f\u8521",
+                                "age": 21,
+                                "gender": "\u5973",
+                                "grades": {
+                                    "\u8bed\u6587": 73,
+                                    "\u6570\u5b66": 81,
+                                    "\u82f1\u8bed": 83
+                                },
+                                "left": {
+                                    "id": 2024403,
+                                    "name": "\u5c0f\u5468",
+                                    "age": 20,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 68,
+                                        "\u6570\u5b66": 94,
+                                        "\u82f1\u8bed": 100
+                                    },
+                                    "left": null,
+                                    "right": {
+                                        "id": 2024407,
+                                        "name": "\u5c0f\u5b97",
+                                        "age": 23,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 81,
+                                            "\u6570\u5b66": 70,
+                                            "\u82f1\u8bed": 83
+                                        },
+                                        "left": null,
+                                        "right": null
+                                    }
+                                },
+                                "right": null
+                            },
+                            "right": null
+                        },
+                        "right": {
+                            "id": 2024439,
+                            "name": "\u5c0f\u90d1",
+                            "age": 21,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 73,
+                                "\u6570\u5b66": 62,
+                                "\u82f1\u8bed": 97
+                            },
+                            "left": null,
+                            "right": null
+                        }
+                    },
+                    "right": {
+                        "id": 2024462,
+                        "name": "\u5c0f\u8584",
+                        "age": 22,
+                        "gender": "\u5973",
+                        "grades": {
+                            "\u8bed\u6587": 69,
+                            "\u6570\u5b66": 65,
+                            "\u82f1\u8bed": 98
+                        },
+                        "left": {
+                            "id": 2024454,
+                            "name": "\u5c0f\u4e01",
+                            "age": 18,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 95,
+                                "\u6570\u5b66": 74,
+                                "\u82f1\u8bed": 82
+                            },
+                            "left": {
+                                "id": 2024453,
+                                "name": "\u5c0f\u8d75",
+                                "age": 22,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 61,
+                                    "\u6570\u5b66": 85,
+                                    "\u82f1\u8bed": 86
+                                },
+                                "left": {
+                                    "id": 2024452,
+                                    "name": "\u5c0f\u6c88",
+                                    "age": 21,
+                                    "gender": "\u7537",
+                                    "grades": {
+                                        "\u8bed\u6587": 67,
+                                        "\u6570\u5b66": 84,
+                                        "\u82f1\u8bed": 87
+                                    },
+                                    "left": null,
+                                    "right": null
+                                },
+                                "right": null
+                            },
+                            "right": null
+                        },
+                        "right": null
+                    }
+                }
+            },
+            "right": {
+                "id": 2024487,
+                "name": "\u5c0f\u8584",
+                "age": 25,
+                "gender": "\u7537",
+                "grades": {
+                    "\u8bed\u6587": 90,
+                    "\u6570\u5b66": 75,
+                    "\u82f1\u8bed": 99
+                },
+                "left": null,
+                "right": null
+            }
+        }
+    },
+    "right": {
+        "id": 2024904,
+        "name": "\u5c0f\u89e3",
+        "age": 18,
+        "gender": "\u5973",
+        "grades": {
+            "\u8bed\u6587": 89,
+            "\u6570\u5b66": 76,
+            "\u82f1\u8bed": 93
+        },
+        "left": {
+            "id": 2024887,
+            "name": "\u5c0f\u521a",
+            "age": 18,
+            "gender": "\u7537",
+            "grades": {
+                "\u8bed\u6587": 68,
+                "\u6570\u5b66": 71,
+                "\u82f1\u8bed": 69
+            },
+            "left": {
+                "id": 2024796,
+                "name": "\u5c0f\u848b",
+                "age": 23,
+                "gender": "\u7537",
+                "grades": {
+                    "\u8bed\u6587": 88,
+                    "\u6570\u5b66": 63,
+                    "\u82f1\u8bed": 69
+                },
+                "left": {
+                    "id": 2024619,
+                    "name": "\u5c0f\u6c6a",
+                    "age": 22,
+                    "gender": "\u5973",
+                    "grades": {
+                        "\u8bed\u6587": 94,
+                        "\u6570\u5b66": 68,
+                        "\u82f1\u8bed": 92
+                    },
+                    "left": {
+                        "id": 2024617,
+                        "name": "\u5c0f\u5173",
+                        "age": 18,
+                        "gender": "\u5973",
+                        "grades": {
+                            "\u8bed\u6587": 71,
+                            "\u6570\u5b66": 66,
+                            "\u82f1\u8bed": 96
+                        },
+                        "left": {
+                            "id": 2024519,
+                            "name": "\u5c0f\u89e3",
+                            "age": 25,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 78,
+                                "\u6570\u5b66": 68,
+                                "\u82f1\u8bed": 70
+                            },
+                            "left": {
+                                "id": 2024509,
+                                "name": "\u5c0f\u676d",
+                                "age": 18,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 93,
+                                    "\u6570\u5b66": 70,
+                                    "\u82f1\u8bed": 79
+                                },
+                                "left": null,
+                                "right": null
+                            },
+                            "right": {
+                                "id": 2024533,
+                                "name": "\u5c0f\u5e94",
+                                "age": 24,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 84,
+                                    "\u6570\u5b66": 87,
+                                    "\u82f1\u8bed": 74
+                                },
+                                "left": null,
+                                "right": {
+                                    "id": 2024547,
+                                    "name": "\u5c0f\u4e50",
+                                    "age": 20,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 60,
+                                        "\u6570\u5b66": 79,
+                                        "\u82f1\u8bed": 63
+                                    },
+                                    "left": {
+                                        "id": 2024535,
+                                        "name": "\u5c0f\u4e01",
+                                        "age": 22,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 83,
+                                            "\u6570\u5b66": 79,
+                                            "\u82f1\u8bed": 68
+                                        },
+                                        "left": null,
+                                        "right": {
+                                            "id": 2024541,
+                                            "name": "\u5c0f\u9648",
+                                            "age": 24,
+                                            "gender": "\u7537",
+                                            "grades": {
+                                                "\u8bed\u6587": 69,
+                                                "\u6570\u5b66": 68,
+                                                "\u82f1\u8bed": 75
+                                            },
+                                            "left": null,
+                                            "right": {
+                                                "id": 2024545,
+                                                "name": "\u5c0f\u674e",
+                                                "age": 19,
+                                                "gender": "\u5973",
+                                                "grades": {
+                                                    "\u8bed\u6587": 67,
+                                                    "\u6570\u5b66": 94,
+                                                    "\u82f1\u8bed": 100
+                                                },
+                                                "left": null,
+                                                "right": {
+                                                    "id": 2024546,
+                                                    "name": "\u6653\u6eaa",
+                                                    "age": 20,
+                                                    "gender": "\u5973",
+                                                    "grades": {
+                                                        "\u8bed\u6587": 98,
+                                                        "\u6570\u5b66": 95,
+                                                        "\u82f1\u8bed": 90
+                                                    },
+                                                    "left": null,
+                                                    "right": null
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "right": {
+                                        "id": 2024563,
+                                        "name": "\u5c0f\u7941",
+                                        "age": 20,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 91,
+                                            "\u6570\u5b66": 63,
+                                            "\u82f1\u8bed": 72
+                                        },
+                                        "left": null,
+                                        "right": {
+                                            "id": 2024590,
+                                            "name": "\u5c0f\u66f9",
+                                            "age": 23,
+                                            "gender": "\u7537",
+                                            "grades": {
+                                                "\u8bed\u6587": 68,
+                                                "\u6570\u5b66": 85,
+                                                "\u82f1\u8bed": 85
+                                            },
+                                            "left": {
+                                                "id": 2024577,
+                                                "name": "\u5c0f\u5bb6",
+                                                "age": 24,
+                                                "gender": "\u5973",
+                                                "grades": {
+                                                    "\u8bed\u6587": 95,
+                                                    "\u6570\u5b66": 92,
+                                                    "\u82f1\u8bed": 64
+                                                },
+                                                "left": {
+                                                    "id": 2024564,
+                                                    "name": "\u5c0f\u5e9e",
+                                                    "age": 21,
+                                                    "gender": "\u5973",
+                                                    "grades": {
+                                                        "\u8bed\u6587": 72,
+                                                        "\u6570\u5b66": 96,
+                                                        "\u82f1\u8bed": 94
+                                                    },
+                                                    "left": null,
+                                                    "right": null
+                                                },
+                                                "right": null
+                                            },
+                                            "right": null
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "right": null
+                    },
+                    "right": {
+                        "id": 2024722,
+                        "name": "\u5c0f\u6797",
+                        "age": 25,
+                        "gender": "\u7537",
+                        "grades": {
+                            "\u8bed\u6587": 84,
+                            "\u6570\u5b66": 98,
+                            "\u82f1\u8bed": 81
+                        },
+                        "left": {
+                            "id": 2024683,
+                            "name": "\u5c0f\u6bb7",
+                            "age": 25,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 77,
+                                "\u6570\u5b66": 75,
+                                "\u82f1\u8bed": 84
+                            },
+                            "left": {
+                                "id": 2024648,
+                                "name": "\u5c0f\u89e3",
+                                "age": 19,
+                                "gender": "\u5973",
+                                "grades": {
+                                    "\u8bed\u6587": 62,
+                                    "\u6570\u5b66": 83,
+                                    "\u82f1\u8bed": 96
+                                },
+                                "left": {
+                                    "id": 2024628,
+                                    "name": "\u5c0f\u7f2a",
+                                    "age": 18,
+                                    "gender": "\u7537",
+                                    "grades": {
+                                        "\u8bed\u6587": 89,
+                                        "\u6570\u5b66": 63,
+                                        "\u82f1\u8bed": 66
+                                    },
+                                    "left": null,
+                                    "right": null
+                                },
+                                "right": {
+                                    "id": 2024668,
+                                    "name": "\u5c0f\u9ea6",
+                                    "age": 20,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 64,
+                                        "\u6570\u5b66": 72,
+                                        "\u82f1\u8bed": 85
+                                    },
+                                    "left": null,
+                                    "right": {
+                                        "id": 2024670,
+                                        "name": "\u5c0f\u5b97",
+                                        "age": 18,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 77,
+                                            "\u6570\u5b66": 76,
+                                            "\u82f1\u8bed": 96
+                                        },
+                                        "left": null,
+                                        "right": null
+                                    }
+                                }
+                            },
+                            "right": {
+                                "id": 2024700,
+                                "name": "\u5c0f\u5143",
+                                "age": 23,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 80,
+                                    "\u6570\u5b66": 65,
+                                    "\u82f1\u8bed": 96
+                                },
+                                "left": null,
+                                "right": {
+                                    "id": 2024721,
+                                    "name": "\u5c0f\u7ea2",
+                                    "age": 21,
+                                    "gender": "\u7537",
+                                    "grades": {
+                                        "\u8bed\u6587": 82,
+                                        "\u6570\u5b66": 90,
+                                        "\u82f1\u8bed": 68
+                                    },
+                                    "left": {
+                                        "id": 2024712,
+                                        "name": "\u5c0f\u65b9",
+                                        "age": 18,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 75,
+                                            "\u6570\u5b66": 71,
+                                            "\u82f1\u8bed": 77
+                                        },
+                                        "left": null,
+                                        "right": null
+                                    },
+                                    "right": null
+                                }
+                            }
+                        },
+                        "right": {
+                            "id": 2024765,
+                            "name": "\u5c0f\u6234",
+                            "age": 21,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 97,
+                                "\u6570\u5b66": 96,
+                                "\u82f1\u8bed": 68
+                            },
+                            "left": {
+                                "id": 2024751,
+                                "name": "\u5c0f\u5c39",
+                                "age": 20,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 67,
+                                    "\u6570\u5b66": 64,
+                                    "\u82f1\u8bed": 63
+                                },
+                                "left": {
+                                    "id": 2024749,
+                                    "name": "\u5c0f\u535c",
+                                    "age": 24,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 93,
+                                        "\u6570\u5b66": 72,
+                                        "\u82f1\u8bed": 68
+                                    },
+                                    "left": {
+                                        "id": 2024723,
+                                        "name": "\u5c0f\u4e3d",
+                                        "age": 23,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 80,
+                                            "\u6570\u5b66": 77,
+                                            "\u82f1\u8bed": 94
+                                        },
+                                        "left": null,
+                                        "right": {
+                                            "id": 2024739,
+                                            "name": "\u5c0f\u5c24",
+                                            "age": 22,
+                                            "gender": "\u7537",
+                                            "grades": {
+                                                "\u8bed\u6587": 69,
+                                                "\u6570\u5b66": 80,
+                                                "\u82f1\u8bed": 71
+                                            },
+                                            "left": null,
+                                            "right": null
+                                        }
+                                    },
+                                    "right": null
+                                },
+                                "right": {
+                                    "id": 2024758,
+                                    "name": "\u5c0f\u9ea6",
+                                    "age": 18,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 64,
+                                        "\u6570\u5b66": 98,
+                                        "\u82f1\u8bed": 78
+                                    },
+                                    "left": {
+                                        "id": 2024754,
+                                        "name": "\u5c0f\u90d1",
+                                        "age": 23,
+                                        "gender": "\u5973",
+                                        "grades": {
+                                            "\u8bed\u6587": 65,
+                                            "\u6570\u5b66": 93,
+                                            "\u82f1\u8bed": 61
+                                        },
+                                        "left": null,
+                                        "right": null
+                                    },
+                                    "right": null
+                                }
+                            },
+                            "right": {
+                                "id": 2024773,
+                                "name": "\u5c0f\u6e5b",
+                                "age": 19,
+                                "gender": "\u5973",
+                                "grades": {
+                                    "\u8bed\u6587": 99,
+                                    "\u6570\u5b66": 68,
+                                    "\u82f1\u8bed": 63
+                                },
+                                "left": {
+                                    "id": 2024766,
+                                    "name": "\u5c0f\u949f",
+                                    "age": 21,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 75,
+                                        "\u6570\u5b66": 81,
+                                        "\u82f1\u8bed": 67
+                                    },
+                                    "left": null,
+                                    "right": null
+                                },
+                                "right": {
+                                    "id": 2024782,
+                                    "name": "\u5c0f\u6bb7",
+                                    "age": 23,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 93,
+                                        "\u6570\u5b66": 95,
+                                        "\u82f1\u8bed": 88
+                                    },
+                                    "left": null,
+                                    "right": null
+                                }
+                            }
+                        }
+                    }
+                },
+                "right": {
+                    "id": 2024875,
+                    "name": "\u5c0f\u65b9",
+                    "age": 24,
+                    "gender": "\u7537",
+                    "grades": {
+                        "\u8bed\u6587": 70,
+                        "\u6570\u5b66": 65,
+                        "\u82f1\u8bed": 89
+                    },
+                    "left": {
+                        "id": 2024814,
+                        "name": "\u5c0f\u65b9",
+                        "age": 19,
+                        "gender": "\u7537",
+                        "grades": {
+                            "\u8bed\u6587": 69,
+                            "\u6570\u5b66": 88,
+                            "\u82f1\u8bed": 95
+                        },
+                        "left": null,
+                        "right": {
+                            "id": 2024863,
+                            "name": "\u5c0f\u949f",
+                            "age": 23,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 98,
+                                "\u6570\u5b66": 84,
+                                "\u82f1\u8bed": 94
+                            },
+                            "left": {
+                                "id": 2024835,
+                                "name": "\u5c0f\u7f2a",
+                                "age": 22,
+                                "gender": "\u5973",
+                                "grades": {
+                                    "\u8bed\u6587": 84,
+                                    "\u6570\u5b66": 88,
+                                    "\u82f1\u8bed": 77
+                                },
+                                "left": {
+                                    "id": 2024820,
+                                    "name": "\u5c0f\u9a6c",
+                                    "age": 19,
+                                    "gender": "\u7537",
+                                    "grades": {
+                                        "\u8bed\u6587": 85,
+                                        "\u6570\u5b66": 85,
+                                        "\u82f1\u8bed": 70
+                                    },
+                                    "left": null,
+                                    "right": null
+                                },
+                                "right": null
+                            },
+                            "right": null
+                        }
+                    },
+                    "right": {
+                        "id": 2024877,
+                        "name": "\u5c0f\u82cf",
+                        "age": 25,
+                        "gender": "\u7537",
+                        "grades": {
+                            "\u8bed\u6587": 64,
+                            "\u6570\u5b66": 60,
+                            "\u82f1\u8bed": 61
+                        },
+                        "left": null,
+                        "right": {
+                            "id": 2024880,
+                            "name": "\u5c0f\u4e01",
+                            "age": 24,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 74,
+                                "\u6570\u5b66": 97,
+                                "\u82f1\u8bed": 100
+                            },
+                            "left": null,
+                            "right": {
+                                "id": 2024886,
+                                "name": "\u5c0f\u4e3d",
+                                "age": 23,
+                                "gender": "\u5973",
+                                "grades": {
+                                    "\u8bed\u6587": 76,
+                                    "\u6570\u5b66": 89,
+                                    "\u82f1\u8bed": 99
+                                },
+                                "left": {
+                                    "id": 2024884,
+                                    "name": "\u5c0f\u4e01",
+                                    "age": 21,
+                                    "gender": "\u5973",
+                                    "grades": {
+                                        "\u8bed\u6587": 79,
+                                        "\u6570\u5b66": 91,
+                                        "\u82f1\u8bed": 89
+                                    },
+                                    "left": null,
+                                    "right": null
+                                },
+                                "right": null
+                            }
+                        }
+                    }
+                }
+            },
+            "right": {
+                "id": 2024891,
+                "name": "\u5c0f\u5e94",
+                "age": 25,
+                "gender": "\u7537",
+                "grades": {
+                    "\u8bed\u6587": 95,
+                    "\u6570\u5b66": 88,
+                    "\u82f1\u8bed": 95
+                },
+                "left": {
+                    "id": 2024888,
+                    "name": "\u5c0f\u4f0f",
+                    "age": 18,
+                    "gender": "\u5973",
+                    "grades": {
+                        "\u8bed\u6587": 100,
+                        "\u6570\u5b66": 87,
+                        "\u82f1\u8bed": 68
+                    },
+                    "left": null,
+                    "right": null
+                },
+                "right": {
+                    "id": 2024894,
+                    "name": "\u5c0f\u7ea2",
+                    "age": 22,
+                    "gender": "\u5973",
+                    "grades": {
+                        "\u8bed\u6587": 95,
+                        "\u6570\u5b66": 67,
+                        "\u82f1\u8bed": 82
+                    },
+                    "left": {
+                        "id": 2024893,
+                        "name": "\u5c0f\u590f",
+                        "age": 22,
+                        "gender": "\u7537",
+                        "grades": {
+                            "\u8bed\u6587": 66,
+                            "\u6570\u5b66": 83,
+                            "\u82f1\u8bed": 91
+                        },
+                        "left": null,
+                        "right": null
+                    },
+                    "right": null
+                }
+            }
+        },
+        "right": {
+            "id": 2024935,
+            "name": "\u5c0f\u848b",
+            "age": 22,
+            "gender": "\u7537",
+            "grades": {
+                "\u8bed\u6587": 93,
+                "\u6570\u5b66": 95,
+                "\u82f1\u8bed": 84
+            },
+            "left": {
+                "id": 2024927,
+                "name": "\u5c0f\u66f9",
+                "age": 20,
+                "gender": "\u5973",
+                "grades": {
+                    "\u8bed\u6587": 74,
+                    "\u6570\u5b66": 60,
+                    "\u82f1\u8bed": 95
+                },
+                "left": {
+                    "id": 2024914,
+                    "name": "\u5c0f\u5c60",
+                    "age": 19,
+                    "gender": "\u5973",
+                    "grades": {
+                        "\u8bed\u6587": 66,
+                        "\u6570\u5b66": 68,
+                        "\u82f1\u8bed": 92
+                    },
+                    "left": null,
+                    "right": null
+                },
+                "right": null
+            },
+            "right": {
+                "id": 2024939,
+                "name": "\u5c0f\u51af",
+                "age": 20,
+                "gender": "\u7537",
+                "grades": {
+                    "\u8bed\u6587": 95,
+                    "\u6570\u5b66": 85,
+                    "\u82f1\u8bed": 70
+                },
+                "left": null,
+                "right": {
+                    "id": 2024987,
+                    "name": "\u5c0f\u66f9",
+                    "age": 18,
+                    "gender": "\u5973",
+                    "grades": {
+                        "\u8bed\u6587": 84,
+                        "\u6570\u5b66": 87,
+                        "\u82f1\u8bed": 95
+                    },
+                    "left": {
+                        "id": 2024947,
+                        "name": "\u5c0f\u521a",
+                        "age": 21,
+                        "gender": "\u5973",
+                        "grades": {
+                            "\u8bed\u6587": 67,
+                            "\u6570\u5b66": 87,
+                            "\u82f1\u8bed": 61
+                        },
+                        "left": {
+                            "id": 2024945,
+                            "name": "\u5c0f\u7530",
+                            "age": 20,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 71,
+                                "\u6570\u5b66": 99,
+                                "\u82f1\u8bed": 80
+                            },
+                            "left": null,
+                            "right": null
+                        },
+                        "right": {
+                            "id": 2024975,
+                            "name": "\u5c0f\u6234",
+                            "age": 18,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 66,
+                                "\u6570\u5b66": 95,
+                                "\u82f1\u8bed": 86
+                            },
+                            "left": {
+                                "id": 2024970,
+                                "name": "\u5c0f\u515a",
+                                "age": 20,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 93,
+                                    "\u6570\u5b66": 61,
+                                    "\u82f1\u8bed": 87
+                                },
+                                "left": null,
+                                "right": null
+                            },
+                            "right": null
+                        }
+                    },
+                    "right": {
+                        "id": 2024988,
+                        "name": "\u5c0f\u82cf",
+                        "age": 19,
+                        "gender": "\u5973",
+                        "grades": {
+                            "\u8bed\u6587": 89,
+                            "\u6570\u5b66": 76,
+                            "\u82f1\u8bed": 93
+                        },
+                        "left": {
+                            "id": 2024987,
+                            "name": "\u5c0f\u845b",
+                            "age": 22,
+                            "gender": "\u5973",
+                            "grades": {
+                                "\u8bed\u6587": 86,
+                                "\u6570\u5b66": 88,
+                                "\u82f1\u8bed": 86
+                            },
+                            "left": null,
+                            "right": null
+                        },
+                        "right": {
+                            "id": 2024988,
+                            "name": "\u5c0f\u891a",
+                            "age": 21,
+                            "gender": "\u7537",
+                            "grades": {
+                                "\u8bed\u6587": 96,
+                                "\u6570\u5b66": 89,
+                                "\u82f1\u8bed": 82
+                            },
+                            "left": null,
+                            "right": {
+                                "id": 2024995,
+                                "name": "\u5c0f\u4f59",
+                                "age": 18,
+                                "gender": "\u7537",
+                                "grades": {
+                                    "\u8bed\u6587": 97,
+                                    "\u6570\u5b66": 95,
+                                    "\u82f1\u8bed": 69
+                                },
+                                "left": null,
+                                "right": null
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
